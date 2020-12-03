@@ -13,10 +13,6 @@ object Day3 {
 
     // for part 2
     println(Day3.slopes.map({ case (r, d) => Day3.countTrees(grid, r, d)}).map(_.toLong).product)
-    Day3.slopes.foreach({ case (r, d) =>
-      val trees = Day3.countTrees(grid, r, d)
-      println(s"for ($r, $d) => $trees")
-    })
   }
 
   def countTrees(grid: Array[String], rightSlope: Int, downSlope: Int): Int = {
