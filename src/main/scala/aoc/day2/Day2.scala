@@ -30,7 +30,6 @@ object Day2 {
     }
   }
 
-
   def isValidPart1(min:Int, max: Int, chr: Char, password: String): Boolean = {
     var count = 0;
 
@@ -47,5 +46,4 @@ object Day2 {
     val found = Array(password.charAt(p1), password.charAt(p2))
     found.count(_ == chr) == 1
   }
-
 }
